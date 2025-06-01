@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* SpryAccordion.css - version 0.4 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main Accordion container. For our default style,
+ * we draw borders on the left, right, and bottom. The top border of the Accordion
+ * will be rendered by the first AccordionPanelTab which never moves.
+ *
+ * If you want to constrain the width of the Accordion widget, set a width on
+ * the Accordion container. By default, our accordion expands horizontally to fill
+ * up available space.
+ *
+ * The name of the class ("Accordion") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style the
+ * Accordion container.
+ */
+.Accordion {
+	border-left: solid 1px gray;
+	border-bottom: solid 1px white;
+	background-color: #E74142;
+	border-top: solid 1px white;
+	position: static;
+	margin-top: 0px;
+	height: auto;
+}
+
+/* This is the selector for the AccordionPanel container which houses the
+ * panel tab and a panel content area. It doesn't render visually, but we
+ * make sure that it has zero margin and padding.
+ *
+ * The name of the class ("AccordionPanel") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel container.
+*/
+.AccordionPanel {
+	margin: auto;
+	padding: 0px;
+	border-bottom: #FFF;
+}
+
+/* This is the selector for the AccordionPanelTab. This container houses
+ * the title for the panel. This is also the container that the user clicks
+ * on to open a specific panel.
+ *
+ * The name of the class ("AccordionPanelTab") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel tab container.
+ *
+ * NOTE:
+ * This rule uses -moz-user-select and -khtml-user-select properties to prevent the
+ * user from selecting the text in the AccordionPanelTab. These are proprietary browser
+ * properties that only work in Mozilla based browsers (like FireFox) and KHTML based
+ * browsers (like Safari), so they will not pass W3C validation. If you want your documents to
+ * validate, and don't care if the user can select the text within an AccordionPanelTab,
+ * you can safely remove those properties without affecting the functionality of the widget.
+ */
+.AccordionPanelTab {
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	background-image: url(/web/20161106035706im_/http://fallsteingymnasium.de/Website%20FGO/Website%20FGO/Grafik%20web/menue-tab.jpg);
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-align: center;
+	line-height: 25px;
+	border-bottom: solid 1px white;
+	position: relative;
+}
+
+/* This is the selector for a Panel's Content area. It's important to note that
+ * you should never put any padding on the panel's content area if you plan to
+ * use the Accordions panel animations. Placing a non-zero padding on the content
+ * area can cause the accordion to abruptly grow in height while the panels animate.
+ *
+ * Anyone who styles an Accordion *MUST* specify a height on the Accordion Panel
+ * Content container.
+ *
+ * The name of the class ("AccordionPanelContent") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel content container.
+ */
+.AccordionPanelContent {
+	overflow: hidden;
+	padding: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	background-image: url(/web/20161106035706im_/http://fallsteingymnasium.de/Website%20FGO/Website%20FGO/Grafik%20web/menue-content.jpg);
+	text-align: center;
+	color: #FFF;
+	border-bottom: solid 1px white;
+	text-transform: none;
+	height: 320px;
+	margin: 0;
+	text-decoration: none;
+}
+
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open. The class "AccordionPanelOpen" is programatically added and removed
+ * from panels as the user clicks on the tabs within the Accordion.
+ */
+.AccordionPanelOpen .AccordionPanelTab {
+	background-color: #EEEEEE;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* This is an example of how to change the appearance of the panel tab as the
+ * mouse hovers over it. The class "AccordionPanelTabHover" is programatically added
+ * and removed from panel tab containers as the mouse enters and exits the tab container.
+ */
+.AccordionPanelTabHover {
+	color: #999;
+}
+.AccordionPanelOpen .AccordionPanelTabHover {
+	color: #999;
+	text-decoration: none;
+}
+
+/* This is an example of how to change the appearance of all the panel tabs when the
+ * Accordion has focus. The "AccordionFocused" class is programatically added and removed
+ * whenever the Accordion gains or loses keyboard focus.
+ */
+.AccordionFocused .AccordionPanelTab {
+	background-color: #BD2C29;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open when the Accordion has focus.
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
+	background-color: #BD2C29;
+	color: #FFF;
+	text-decoration:none;
+}
+#Accordion1 .AccordionPanel.AccordionPanelClosed .AccordionPanelContent p a {
+	color: #FFF;
+	text-decoration: none;
+}
+#Accordion1 .AccordionPanel.AccordionPanelClosed .AccordionPanelContent p a {
+	font-family: Verdana, Geneva, sans-serif;
+}
+#Accordion1 .AccordionPanel.AccordionPanelClosed .AccordionPanelTab a {
+	color: #FFF;
+	text-decoration:none;
+}
+#Accordion1 .AccordionPanel.AccordionPanelOpen .AccordionPanelTab a {
+	color: #FFF;
+	background-color: #BD2C29;
+}
+
+.content {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(/web/20161106035706im_/http://fallsteingymnasium.de/Website%20FGO/Website%20FGO/Grafik%20web/menue-content.jpg);
+}
+
+/*
+     FILE ARCHIVED ON 03:57:06 Nov 06, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:32:58 Jun 01, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.769
+  exclusion.robots: 0.053
+  exclusion.robots.policy: 0.038
+  esindex: 0.012
+  cdx.remote: 5.231
+  LoadShardBlock: 472.859 (3)
+  PetaboxLoader3.resolve: 436.4 (4)
+  PetaboxLoader3.datanode: 275.514 (5)
+  load_resource: 398.99 (2)
+*/

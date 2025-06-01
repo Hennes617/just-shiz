@@ -1,0 +1,84 @@
+.Hintergrund {
+	background-color: #FFF;
+	background-repeat: repeat;
+	width: auto;
+	height: auto;
+}
+.Hintergrund_rand {
+	background-color: #BD2C29;
+	background-repeat: repeat;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	position: relative;
+}
+.Hintergrund_menue {
+	background-color: #BD2C29;
+	background-repeat: repeat;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	height: 400px;
+	position: static;
+}
+
+.Hintergrund_Vertikale {
+	background-image: url(/web/20161106071935im_/http://fallsteingymnasium.de/Website%20FGO/Website%20FGO/Grafik%20web/vertikale.jpg);
+	background-repeat: repeat;
+	width: auto;
+	position: realtive;
+}
+
+.rechte_Spalte {
+	background-image: url(/web/20161106071935im_/http://fallsteingymnasium.de/Website%20FGO/Website%20FGO/Grafik%20web/header-background.jpg);
+	background-repeat: repeat;
+	width: auto;
+	position: relative;
+}
+.Header {
+	height: 145px;
+	margin-top: 1px;
+	width: auto;
+	left: auto;
+	right: auto;
+	clip: rect(auto,auto,auto,auto);
+	background-image: url(/web/20161106071935im_/http://fallsteingymnasium.de/Website%20FGO/Website%20FGO/Grafik%20web/header.jpg);
+}
+.Header_Startseite {
+	height: 145px;
+	margin-top: 1px;
+	width: auto;
+	left: auto;
+	right: auto;
+	clip: rect(auto,auto,auto,auto);
+}
+
+.Header_Zusatz {
+	height: 144px;
+	background-image: url(/web/20161106071935im_/http://fallsteingymnasium.de/Website%20FGO/Website%20FGO/Grafik%20web/header-background.jpg);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	float: none;
+	clear: right;
+}
+
+/*
+     FILE ARCHIVED ON 07:19:35 Nov 06, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:33:01 Jun 01, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.568
+  exclusion.robots: 0.031
+  exclusion.robots.policy: 0.02
+  esindex: 0.015
+  cdx.remote: 16.926
+  LoadShardBlock: 559.959 (3)
+  PetaboxLoader3.datanode: 147.883 (5)
+  PetaboxLoader3.resolve: 561.026 (3)
+  load_resource: 232.503 (2)
+*/
